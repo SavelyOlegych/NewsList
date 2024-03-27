@@ -56,8 +56,8 @@ export default {
   left: 0;
   height: 100vh;
   width: 300px;
-  background-color: $sidebarBgColor;
-  color: $bgColor;
+  background-color: $blackColor;
+  color: $lightGreyColor;
   box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
 
   &__top {
@@ -83,7 +83,7 @@ export default {
     
     &-link {
       @include flex(normal, center);
-      color: $bgColor;
+      color: $lightGreyColor;
     }
     
     &--selected {

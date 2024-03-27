@@ -2,7 +2,7 @@
 @import "fonts";
 
 body {
-  background-color: $bgColor;
+  background-color: $lightGreyColor;
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
@@ -10,4 +10,8 @@ body {
 .main {
   margin-left: 300px;
   padding: 30px;
+  
+  &__title {
+    margin-bottom: 30px;
+  }
 }
