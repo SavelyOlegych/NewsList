@@ -1,0 +1,13 @@
+@import "reset";
+@import "fonts";
+
+body {
+  background-color: $bgColor;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  margin-left: 300px;
+  padding: 30px;
+}
