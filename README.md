@@ -1,6 +1,11 @@
 # news-list
 
 ## Project setup
+
+```
+node v16.20.2
+```
+
 ```
 npm install
 ```
