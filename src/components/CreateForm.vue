@@ -31,7 +31,8 @@
       />
       <VButton
         class="main__create-form-button"
-        @click="sendForm"
+        @click.prevent="sendForm"
+        type="submit"
       >
         Отправить
       </VButton>

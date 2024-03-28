@@ -2,7 +2,7 @@
   <button
     class="button"
     :class="'button--' + theme"
-    type="button"
+    :type="type"
   >
     <slot/>
   </button>
@@ -15,7 +15,11 @@ export default {
     theme: {
       type: String,
       default: "blue",
-    }
+    },
+    type: {
+      type: String,
+      default: "button",
+    },
   }
 };
 </script>
