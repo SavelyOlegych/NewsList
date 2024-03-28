@@ -11,7 +11,3 @@ export default {
   components: { NewsList },
 };
 </script>
-
-<style scoped>
-
-</style>

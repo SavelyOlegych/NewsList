@@ -12,7 +12,13 @@
           <div class="news-list__item-text">{{ item.body }}</div>
         </div>
       </div>
-      <VButton class="news-list__item-delete-button" @click="openDeletePopup(item)">Удалить</VButton>
+      <VButton
+        class="news-list__item-delete-button"
+        theme="red"
+        @click="openDeletePopup(item)"
+      >
+        Удалить
+      </VButton>
     </li>
   </ul>
   <div v-else class="preloader"></div>
@@ -134,14 +140,6 @@ export default {
       margin-left: 15px;
       width: 100px;
       flex-shrink: 0;
-      border: 2px solid $redColor;
-      background-color: $redColor;
-      color: $lightGreyColor;
-      
-      &:hover {
-        background-color: $lightGreyColor;
-        color: $redColor;
-      }
     }
   }
 }

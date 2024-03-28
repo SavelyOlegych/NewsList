@@ -6,13 +6,14 @@
       </div>
       <div class="delete-popup__buttons">
         <VButton
-          class="delete-popup__cancel-button"
+          class="delete-popup__button"
           @click="closePopup"
         >
           Нет
         </VButton>
         <VButton
-          class="delete-popup__delete-button"
+          class="delete-popup__button"
+          theme="red"
           @click="$emit('deleteNewsItem', newsItem.id)"
         >
           Да
@@ -68,32 +69,8 @@ export default {
     gap: 20px;
   }
   
-  &__cancel-button,
-  &__delete-button {
+  &__button {
     width: 100%;
-    border: 2px solid;
-  }
-  
-  &__cancel-button {
-    border-color: royalblue;
-    background-color: royalblue;
-    color: $lightGreyColor;
-    
-    &:hover {
-      background-color: $lightGreyColor;
-      color: royalblue;
-    }
-  }
-
-  &__delete-button {
-    border-color: $redColor;
-    background-color: $redColor;
-    color: $lightGreyColor;
-
-    &:hover {
-      background-color: $lightGreyColor;
-      color: $redColor;
-    }
   }
 }
 </style>
